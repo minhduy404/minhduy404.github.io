@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Bài tập Hồ cá vui nhộn </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="ho_ca.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            BTGIUAKY
+        </div>
+
+        <div class="navbar-links">
+            <a href="../TrangChu.html">Trang chủ</a>
+            <a href="../Cv/cv.html">CV</a>
+            <a class="active" href="ho_ca.html">Hồ Cá</a>
+        </div>
+    </nav>
+
+    <div class="controls">
+        <audio controls loop autoplay>
+            <source src="images/nhac.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="right">
+            <button onclick="doiNen(1)">Nền 1</button>
+            <button onclick="doiNen(2)">Nền 2</button>
+            <button onclick="doiNen(3)">Nền 3</button>
+        </div>
+        </div>
+        <div id="nen">
+            <div id="shark"><img src="images/shark.png" ; width="auto" ; height="auto" ;></div>
+            <div id="diver1"><img src="images/diver1.png" ; width="auto" ; height="auto" ;></div>
+            <div id="diver2"><img src="images/diver2.png" ; width="auto" ; height="auto" ;></div>
+            <div id="diver3"><img src="images/diver3.png" ; width="auto" ; height="auto" ;></div>
+            <div id="faintSchool"><img src="images/faintSchool.png" ; width="auto" ; height="auto" ;></div>
+            <div id="goldFishSchool"><img src="images/goldFishSchool.png" ; width="auto" ; height="auto" ;></div>
+            <div id="turtle"><img src="images/turtle.png" ; width="auto" ; height="auto" ;></div>
+
+        </div>
+        <script>
+            function doiNen(soNen) {
+                const nen = document.getElementById("nen");
+
+                if (soNen == 1) {
+                    nen.style.backgroundImage = "url('images/nen1.jpg')";
+                }
+                else if (soNen == 2) {
+                    nen.style.backgroundImage = "url('images/nen2.jpg')";
+                }
+                else if (soNen == 3) {
+                    nen.style.backgroundImage = "url('images/nen3.jpg')";
+                }
+            }
+        </script>
+</body>
+
+</html>
